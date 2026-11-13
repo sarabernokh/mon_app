@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur de point d'ébullition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="carte">
+        <h1>🔥 Point d'ébullition</h1>
+        <p class="sous-titre">Entrez le nom d'une molécule (en anglais)</p>
+
+        <form id="formulaire">
+            <input type="text" id="molecule" placeholder="Ex : water, ethanol..." required>
+            <button type="submit">Calculer</button>
+        </form>
+
+        <div id="resultat" class="resultat cache"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
